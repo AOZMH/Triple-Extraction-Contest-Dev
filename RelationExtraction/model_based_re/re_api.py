@@ -50,19 +50,23 @@ def re_api(json_string):
 
     输出为[entity1, entity2, top_1_relation]，通过json.dumps以string格式输出
     """
-    text, entity1, entity2, cand_rel = json.loads(json_string)
-    assert(len(cand_rel)>0), "候选关系集为空集!"
-    host = '115.27.161.60'
-    port = 9303
-    client = kbqa_client(host, port)
-    res = client.extract_relation(text, entity1, entity2, 1, cand_rel)
-    client.stop_client()
-    top1_rel = res['Result'][0][0]
-    return json.dumps([entity1, entity2, top1_rel])
+    dat = json.loads(json_string)
+    ret = []
+    for text, entity1, entity2, cand_rel in dat:
+        assert(len(cand_rel)>0), "候选关系集为空集!"
+        host = '115.27.161.60'
+        port = 9303
+        client = kbqa_client(host, port)
+        res = client.extract_relation(text, entity1, entity2, 1, cand_rel)
+        client.stop_client()
+        top1_rel = res['Result'][0][0]
+        ret.append([entity1, entity2, top1_rel])
+    
+    return json.dumps(ret)
 
 
 if __name__ == "__main__":
-    json_string = "[\"报道还提到，4月29日，两架B-1B轰炸机曾从美国本土远程奔赴中国南海参加演习。\", \"B-1B轰炸机\", \"美国\", [\"使用国家\", \"所属国家\"]]"
+    json_string = "[[\"报道还提到，4月29日，两架B-1B轰炸机曾从美国本土远程奔赴中国南海参加演习。\", \"B-1B轰炸机\", \"美国\", [\"使用国家\", \"所属国家\"]]]"
     output_json_string = re_api(json_string)
     #print(output_json_string)
     print(json.loads(output_json_string))
