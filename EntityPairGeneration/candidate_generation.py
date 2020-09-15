@@ -29,10 +29,18 @@ def form_relation_candidates(entity_list, relation_dict, output_format='list', t
         for i, c in enumerate(cands):
             c.insert(0, text)
             cands[i] = json.dumps(c, ensure_ascii=False)
+    else:
+        cand_dicts = {}
+        cand_dicts['text'] = text
+        cand_dicts['pairlist'] = []
+        for c in cands:
+            cand_dicts['pairlist'].append({'entity1':c[0], 'entity2':c[1], 'relations':c[2]})
+        cands = cand_dicts
     return cands
 
 if __name__ == '__main__':
     rd = form_relation_dict("./relation-dict.json")
-    test_input = [['B1B轰炸机','武器装备'],['美国', '国家']]
-    test_output = form_relation_candidates(test_input, rd, output_format='json', text='test text')
+    test_input = [['陈福才','人物'],['包头稀土高新区经信委主任', '职位'],['包头稀土高新区经信委', '组织机构']]
+    text = '包头稀土高新区经信委主任陈福才表示，近期已有10户企业与银行对接，拟贷款9500万元。'
+    test_output = form_relation_candidates(test_input, rd, output_format='list', text=text)
     print(test_output)
