@@ -14,7 +14,7 @@ def test1(relationtype):
         if len(jsontext['sro_list']) > 0:
             for obj in jsontext['sro_list']:
                 relation = obj['relation']
-                if relation == relationtype:
+                if relation in relationtype:
                     text=jsontext['text']
                     entity1=obj['subject']
                     entity2=obj['object']
@@ -25,7 +25,7 @@ def test1(relationtype):
         line = f.readline()
     f.close()
 
-def test():
+def test(relationtype):
     os.getcwd()
     f = open("../data/init-train.txt", "r", encoding="utf8")
     line = f.readline()
@@ -34,7 +34,7 @@ def test():
         if len(jsontext['sro_list']) > 0:
             for obj in jsontext['sro_list']:
                 relation = obj['relation']
-                if relation == '后代':
+                if relation in relationtype:
                     print(jsontext)
         line = f.readline()
     f.close()
@@ -123,4 +123,5 @@ if __name__ == '__main__':
     # entity2="黄大年"
     # relation_predicate(str,relation,entity1,entity2)
     # test()
-    test1("后代")
+    # test1("后代")
+    test(["毕业院校"])
