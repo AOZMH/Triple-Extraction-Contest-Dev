@@ -16,3 +16,6 @@ if __name__ == '__main__':
     f.close()
 
 
+def relation_predicate():
+
+    return 0
