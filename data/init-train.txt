@@ -1,9 +1,9 @@
-{"text":"报道还提到，4月29日，两架B-1B轰炸机曾从美国本土远程奔赴中国南海参加演习。","sro_list":[{"subject":"B-1B轰炸机","object":"美国","relation":"所属国家"}]}
+{"text":"报道还提到，4月29日，两架B-1B轰炸机曾从美国本土远程奔赴中国南海参加演习。\n","sro_list":[{"subject":"B-1B轰炸机","object":"美国","relation":"所属国家"}]}
 {"text":"这位海军将军要求匿名，因为他不想卷入“罗斯福”号航母舰长克罗泽被解职风波引发的政治化斗争中。","sro_list":[{"subject":"克罗泽","object":"罗斯福”号航母舰长","relation":"职务"}]}
 {"text":"包头稀土高新区经信委主任陈福才表示，近期已有10户企业与银行对接，拟贷款9500万元。","sro_list":[{"subject":"陈福才","object":"包头稀土高新区经信委主任","relation":"职务"},{"subject":"陈福才","object":"包头稀土高新区经信委","relation":"任职"},{"subject":"包头稀土高新区经信委","object":"陈福才","relation":"负责人"}]}
 {"text":"中石油集团董事长戴厚良在近日的院士和专家座谈会上直言，集团公司又一次走到了生存发展的紧要关头，要紧紧依靠科技创新管理创新，带领公司穿越当前的“至暗时刻”。","sro_list":[{"subject":"戴厚良","object":"董事长","relation":"职务"},{"subject":"戴厚良","object":"中石油集团","relation":"任职"}]}
-{"text":"在武汉市第十四中学高三年级“开学第一课”上，校长平先柏深情地述说。　　","sro_list":[{"subject":"平先柏","object":"校长","relation":"职务"},{"subject":"平先柏","object":"武汉市第十四中学","relation":"任职"},{"subject":"武汉市第十四中学","object":"平先柏","relation":"负责人"}]}
-{"text":"中国科学院空天信息创新研究院的屈维说。　　","sro_list":[{"subject":"中国科学院空天信息创新研究院","object":"屈维","relation":"成员"},{"subject":"中国科学院空天信息创新研究院","object":"中国科学院","relation":"隶属机构"}]}
+{"text":"在武汉市第十四中学高三年级“开学第一课”上，校长平先柏深情地述说。　","sro_list":[{"subject":"平先柏","object":"校长","relation":"职务"},{"subject":"平先柏","object":"武汉市第十四中学","relation":"任职"},{"subject":"武汉市第十四中学","object":"平先柏","relation":"负责人"}]}
+{"text":"中国科学院空天信息创新研究院的屈维说。　","sro_list":[{"subject":"中国科学院空天信息创新研究院","object":"屈维","relation":"成员"},{"subject":"中国科学院空天信息创新研究院","object":"中国科学院","relation":"隶属机构"}]}
 {"text":"这部新片根据真人真事改编，讲述美国著名福音歌手杰雷米·坎普的感人爱情故事。","sro_list":[{"subject":"杰雷米·坎普","object":"美国","relation":"国籍"}]}
 {"text":"俄罗斯媒体“记者报”的报道称，T-14坦克在叙利亚拉塔基亚省的普罗维登斯参加了与反对派武装（俄方称其为“恐怖分子”）的战斗，在那里“据传有3辆T-14坦克被美制的TOW-2B反坦克导弹击中，其中一辆T-14坦克被完全摧毁”。\n","sro_list":[{"subject":"叙利亚","object":"拉塔基亚省的普罗维登斯","relation":"热点地区"},{"subject":"T-14坦克","object":"俄罗斯","relation":"使用国家"},{"subject":"TOW-2B反坦克导弹","object":"美","relation":"所属国家"}]}
 {"text":"与往常一样，在那次演练中，连长马宁按照演练预案，命令抓捕组沿道路前出对“敌”实施抓捕。 \n","sro_list":[{"subject":"马宁","object":"连长","relation":"职务"}]}

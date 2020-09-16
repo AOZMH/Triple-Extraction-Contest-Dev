@@ -3,7 +3,9 @@ def ResultGeneration(text:str,list):
     jsonobj={}
     jsonobj["text"]=text
     jsonobj["sro_list"]=list
-    print(json.dumps(jsonobj,ensure_ascii=False))
+    print(json.dumps(jsonobj, ensure_ascii=False))
+    return  json.dumps(jsonobj, ensure_ascii=False)
+
 
 
 if __name__ == '__main__':
